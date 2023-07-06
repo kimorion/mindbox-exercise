@@ -1,4 +1,5 @@
-﻿using GeometryToolLib.Models;
+﻿using GeometryToolLib;
+using GeometryToolLib.Models;
 using GeometryToolLib.Models.Base;
 using GeometryToolLib.Tools.Implementation;
 
@@ -21,7 +22,7 @@ public class AreaToolTest
             new Circle(1),
             new Circle(5),
         };
-        var areaTool = new AreaTool();
+        var areaTool = Toolbox.GetAreaTool();
         var controlResults = new[] { 6, 0.433, 3.141, 78.54 };
 
         var areas = figures.Select(t => areaTool.GetArea(t)).ToArray();

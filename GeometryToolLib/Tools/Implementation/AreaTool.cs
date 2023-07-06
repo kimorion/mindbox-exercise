@@ -4,7 +4,7 @@ using GeometryToolLib.Models.Base;
 namespace GeometryToolLib.Tools.Implementation;
 
 /// <inheritdoc/>
-public class AreaTool : IAreaTool
+internal class AreaTool : IAreaTool
 {
     /// <inheritdoc/>
     public double GetArea(Figure figure) => // это же имелось ввиду под "Вычисление без знания типа фигуры в compile-time"?

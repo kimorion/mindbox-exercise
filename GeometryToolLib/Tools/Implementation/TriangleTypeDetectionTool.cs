@@ -2,7 +2,7 @@
 
 namespace GeometryToolLib.Tools.Implementation;
 
-public class TriangleTypeDetectionTool : ITriangleTypeDetectionTool
+internal class TriangleTypeDetectionTool : ITriangleTypeDetectionTool
 {
     public bool IsOrthogonal(Triangle triangle)
     {

@@ -37,8 +37,8 @@ NotImplementedException (это сейчас за секунду делаетс�
 ```csharp
 var triangle = new Triangle(3, 4, 5);
 
-var areaTool = new AreaTool();
-var triangleTypeTool = new TriangleTypeDetectionTool();
+var areaTool = Toolbox.GetAreaTool();
+var triangleTypeTool = Toolbox.GetTriangleTypeDetectionTool();
 
 var area = areaTool.GetArea(triangle);
 var isOrthogonal = triangleTypeTool.IsOrthogonal(triangle);
